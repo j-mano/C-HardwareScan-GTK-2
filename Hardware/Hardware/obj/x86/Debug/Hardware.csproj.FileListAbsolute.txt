@@ -1,0 +1,6 @@
+/home/joachimjohnson/Projects/Hardware/Hardware/bin/Debug/Hardware.exe
+/home/joachimjohnson/Projects/Hardware/Hardware/bin/Debug/Hardware.pdb
+/home/joachimjohnson/Projects/Hardware/Hardware/obj/x86/Debug/Hardware.csprojAssemblyReference.cache
+/home/joachimjohnson/Projects/Hardware/Hardware/obj/x86/Debug/Hardware.csproj.CoreCompileInputs.cache
+/home/joachimjohnson/Projects/Hardware/Hardware/obj/x86/Debug/Hardware.exe
+/home/joachimjohnson/Projects/Hardware/Hardware/obj/x86/Debug/Hardware.pdb

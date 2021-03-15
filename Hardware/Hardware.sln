@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hardware", "Hardware\Hardware.csproj", "{511346F0-270C-4FC5-A884-A22F2B367087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servises", "Servises\Servises.csproj", "{469867A9-2F9B-41DC-8F7C-9EE7ADC27FBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{511346F0-270C-4FC5-A884-A22F2B367087}.Debug|x86.ActiveCfg = Debug|x86
+		{511346F0-270C-4FC5-A884-A22F2B367087}.Debug|x86.Build.0 = Debug|x86
+		{511346F0-270C-4FC5-A884-A22F2B367087}.Release|x86.ActiveCfg = Release|x86
+		{511346F0-270C-4FC5-A884-A22F2B367087}.Release|x86.Build.0 = Release|x86
+		{469867A9-2F9B-41DC-8F7C-9EE7ADC27FBF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{469867A9-2F9B-41DC-8F7C-9EE7ADC27FBF}.Debug|x86.Build.0 = Debug|Any CPU
+		{469867A9-2F9B-41DC-8F7C-9EE7ADC27FBF}.Release|x86.ActiveCfg = Release|Any CPU
+		{469867A9-2F9B-41DC-8F7C-9EE7ADC27FBF}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{511346F0-270C-4FC5-A884-A22F2B367087}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hardware/MainWindow.cs">
+    <Files>
+      <File FileName="Hardware/Program.cs" Line="1" Column="1" />
+      <File FileName="Hardware/MainWindow.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Hardware" expanded="True">
+            <Node name="Hardware" expanded="True">
+              <Node name="Properties" selected="True" />
+            </Node>
+            <Node name="Servises" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.Hardware PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
