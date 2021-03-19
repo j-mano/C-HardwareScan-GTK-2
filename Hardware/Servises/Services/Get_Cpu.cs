@@ -6,6 +6,11 @@ using Servises.Modells;
 
 namespace Servises
 {
+
+    /// <summary>
+    /// Get cpu information.
+    /// Can only be used on windows. Mac and Linux will throw exeption.
+    /// </summary>
     public class Get_Cpu
     {
         public static CpuModell Return_Cpu_Name()
@@ -27,13 +32,13 @@ namespace Servises
                     cpumodell.NumberOfEnabledCore   = (uint)obj["NumberOfEnabledCore"];
                     cpumodell.NumberOfLogicalProcessors = (uint)obj["NumberOfLogicalProcessors"];
                 }
+                return cpumodell;
             }
-            catch
+            catch (Exception e)
             {
+                Console.Write(e);
                 throw;
             }
-
-            return cpumodell;
         }
     }
 }

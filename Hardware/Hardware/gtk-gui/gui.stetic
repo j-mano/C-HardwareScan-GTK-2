@@ -2,11 +2,13 @@
 <stetic-interface>
   <configuration>
     <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/Hardware.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="1363 484">
+  <widget class="Gtk.Window" id="MainWindow" design-size="1020 484">
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -32,27 +34,7 @@
                   <placeholder />
                 </child>
                 <child>
-                  <widget class="Gtk.Label" id="label1">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">CPU</property>
-                  </widget>
-                  <packing>
-                    <property name="X">17</property>
-                    <property name="Y">22</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label2">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">label2</property>
-                  </widget>
-                  <packing>
-                    <property name="X">17</property>
-                    <property name="Y">67</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label3">
+                  <widget class="Gtk.Label" id="SystemRamTitleLbl">
                     <property name="MemberName" />
                     <property name="LabelProp" translatable="yes">SystemRam</property>
                   </widget>
@@ -62,17 +44,7 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Label" id="label4">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">label4</property>
-                  </widget>
-                  <packing>
-                    <property name="X">18</property>
-                    <property name="Y">184</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label5">
+                  <widget class="Gtk.Label" id="IsAdminTitle">
                     <property name="MemberName" />
                     <property name="LabelProp" translatable="yes">Run as Admin?</property>
                   </widget>
@@ -82,58 +54,41 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Label" id="label6">
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="CPUTEMPTitlelbl">
                     <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">label6</property>
+                    <property name="LabelProp" translatable="yes">Cpu - Temp</property>
                   </widget>
                   <packing>
-                    <property name="X">24</property>
-                    <property name="Y">325</property>
+                    <property name="X">246</property>
+                    <property name="Y">135</property>
                   </packing>
                 </child>
                 <child>
-                  <placeholder />
-                </child>
-                <child>
-                  <placeholder />
-                </child>
-                <child>
-                  <placeholder />
-                </child>
-                <child>
-                  <placeholder />
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label12">
+                  <widget class="Gtk.Label" id="OSVERSIONTitle">
                     <property name="MemberName" />
                     <property name="LabelProp" translatable="yes">OS Version</property>
                   </widget>
                   <packing>
-                    <property name="X">247</property>
-                    <property name="Y">279</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label13">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">label13</property>
-                  </widget>
-                  <packing>
-                    <property name="X">249</property>
-                    <property name="Y">325</property>
-                  </packing>
-                </child>
-                <child>
-                  <placeholder />
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label8">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">NVIDIA / AMD GPUS</property>
-                  </widget>
-                  <packing>
-                    <property name="X">956</property>
-                    <property name="Y">27</property>
+                    <property name="X">245</property>
+                    <property name="Y">282</property>
                   </packing>
                 </child>
                 <child>
@@ -142,8 +97,8 @@
                     <property name="LabelProp" translatable="yes">DriverVersion</property>
                   </widget>
                   <packing>
-                    <property name="X">716</property>
-                    <property name="Y">85</property>
+                    <property name="X">464</property>
+                    <property name="Y">75</property>
                   </packing>
                 </child>
                 <child>
@@ -152,8 +107,58 @@
                     <property name="LabelProp" translatable="yes">label11</property>
                   </widget>
                   <packing>
-                    <property name="X">721</property>
-                    <property name="Y">134</property>
+                    <property name="X">466</property>
+                    <property name="Y">104</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="VramTitle">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Vram</property>
+                  </widget>
+                  <packing>
+                    <property name="X">465</property>
+                    <property name="Y">158</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="VramPrintoutlbl">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label9</property>
+                  </widget>
+                  <packing>
+                    <property name="X">468</property>
+                    <property name="Y">182</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="AktivGpuTitle">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Aktiv Gpu</property>
+                  </widget>
+                  <packing>
+                    <property name="X">469</property>
+                    <property name="Y">234</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="AktivGPUPrintOutLBL">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label20</property>
+                  </widget>
+                  <packing>
+                    <property name="X">467</property>
+                    <property name="Y">257</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="label8">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">NVIDIA / AMD GPUS</property>
+                  </widget>
+                  <packing>
+                    <property name="X">649</property>
+                    <property name="Y">25</property>
                   </packing>
                 </child>
                 <child>
@@ -164,7 +169,7 @@
                     <property name="MemberName" />
                     <property name="ShadowType">In</property>
                     <child>
-                      <widget class="Gtk.TextView" id="textview2">
+                      <widget class="Gtk.TextView" id="TextviewGPUS">
                         <property name="MemberName" />
                         <property name="WidthRequest">300</property>
                         <property name="HeightRequest">150</property>
@@ -177,48 +182,8 @@ becouse of sli/crossfire</property>
                     </child>
                   </widget>
                   <packing>
-                    <property name="X">952</property>
-                    <property name="Y">78</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label7">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">Vram</property>
-                  </widget>
-                  <packing>
-                    <property name="X">728</property>
-                    <property name="Y">185</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label9">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">label9</property>
-                  </widget>
-                  <packing>
-                    <property name="X">727</property>
-                    <property name="Y">232</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label14">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">Amount od treads</property>
-                  </widget>
-                  <packing>
-                    <property name="X">252</property>
-                    <property name="Y">28</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Label" id="label15">
-                    <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">label15</property>
-                  </widget>
-                  <packing>
-                    <property name="X">254</property>
-                    <property name="Y">65</property>
+                    <property name="X">644</property>
+                    <property name="Y">52</property>
                   </packing>
                 </child>
                 <child>
@@ -227,48 +192,108 @@ becouse of sli/crossfire</property>
                     <property name="LabelProp" translatable="yes">Intel gpus will not be shown.</property>
                   </widget>
                   <packing>
-                    <property name="X">882</property>
-                    <property name="Y">248</property>
+                    <property name="X">645</property>
+                    <property name="Y">219</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Label" id="label17">
+                  <widget class="Gtk.Label" id="CpuTitleLBL">
                     <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">Cpu - Temp</property>
+                    <property name="LabelProp" translatable="yes">CPU</property>
+                  </widget>
+                  <packing>
+                    <property name="X">17</property>
+                    <property name="Y">35</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="CpuTreadTitle">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Amount od treads</property>
                   </widget>
                   <packing>
                     <property name="X">246</property>
-                    <property name="Y">135</property>
+                    <property name="Y">34</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Label" id="label18">
+                  <widget class="Gtk.Label" id="CPUTEMPPrintout">
                     <property name="MemberName" />
                     <property name="LabelProp" translatable="yes">label18</property>
                   </widget>
                   <packing>
-                    <property name="X">254</property>
-                    <property name="Y">185</property>
+                    <property name="X">259</property>
+                    <property name="Y">160</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Label" id="label19">
+                  <widget class="Gtk.Label" id="SysRamPrintOutlbl">
                     <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">Aktiv Gpu</property>
+                    <property name="LabelProp" translatable="yes">label4</property>
                   </widget>
                   <packing>
-                    <property name="X">726</property>
-                    <property name="Y">285</property>
+                    <property name="X">27</property>
+                    <property name="Y">163</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="Gtk.Label" id="label20">
+                  <widget class="Gtk.Label" id="Cpu_LBL_PrintOut">
                     <property name="MemberName" />
-                    <property name="LabelProp" translatable="yes">label20</property>
+                    <property name="LabelProp" translatable="yes">label2</property>
                   </widget>
                   <packing>
-                    <property name="X">726</property>
-                    <property name="Y">325</property>
+                    <property name="X">22</property>
+                    <property name="Y">56</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="CpuTreadPrintOutLBL">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label15</property>
+                  </widget>
+                  <packing>
+                    <property name="X">260</property>
+                    <property name="Y">53</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="OSVERSIONPrintOutLBL">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label13</property>
+                  </widget>
+                  <packing>
+                    <property name="X">252</property>
+                    <property name="Y">303</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="IsAdminPrintOutlbl">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label6</property>
+                  </widget>
+                  <packing>
+                    <property name="X">29</property>
+                    <property name="Y">302</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="HasBatteryPrintOutLbl">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">label2</property>
+                  </widget>
+                  <packing>
+                    <property name="X">36</property>
+                    <property name="Y">390</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="HasBatteryTitle">
+                    <property name="MemberName" />
+                    <property name="LabelProp" translatable="yes">Has battery</property>
+                  </widget>
+                  <packing>
+                    <property name="X">23</property>
+                    <property name="Y">363</property>
                   </packing>
                 </child>
               </widget>

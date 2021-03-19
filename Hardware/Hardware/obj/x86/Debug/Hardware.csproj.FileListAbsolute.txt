@@ -4,3 +4,12 @@
 /home/joachimjohnson/Projects/Hardware/Hardware/obj/x86/Debug/Hardware.csproj.CoreCompileInputs.cache
 /home/joachimjohnson/Projects/Hardware/Hardware/obj/x86/Debug/Hardware.exe
 /home/joachimjohnson/Projects/Hardware/Hardware/obj/x86/Debug/Hardware.pdb
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/bin/Debug/Hardware.exe
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/bin/Debug/Hardware.pdb
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/obj/x86/Debug/Hardware.csprojAssemblyReference.cache
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/obj/x86/Debug/Hardware.csproj.CoreCompileInputs.cache
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/obj/x86/Debug/Hardware.exe
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/obj/x86/Debug/Hardware.pdb
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/bin/Debug/Servises.dll
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/bin/Debug/Servises.pdb
+/home/joachim/Documents/C-HardwareScan-GTK-2/Hardware/Hardware/obj/x86/Debug/Hardware.csproj.CopyComplete

@@ -6,9 +6,16 @@ using Servises.Modells;
 
 namespace Servises
 {
+    // windows only
+
     public class Get_gpu
     {
-        public static GpuModell GpuName()
+        /// <summary>
+        /// Get information of the gpu
+        /// Can only be used on windows. Mac and Linux will throw exeption.
+        /// </summary>
+        /// <returns>The name.</returns>
+        public static GpuModell GpuInfo()
         {
             GpuModell Gpumodell = new GpuModell();
 
@@ -39,14 +46,13 @@ namespace Servises
                         Gpumodell.GpuHighestResAmountSupport = item["Caption"].ToString();
                     }
                 }
+
+                return Gpumodell;
             }
             catch
             {
                 throw;
             }
-                
-
-            return Gpumodell;
         }
     }
 }

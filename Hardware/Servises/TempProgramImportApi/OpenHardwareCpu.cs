@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Servises.TempProgramImportApi
 {
-    class OpenHardwareCpu
+    public class OpenHardwareCpu
     {
         Computer ComputerCpu = new Computer()
         {
@@ -22,9 +22,10 @@ namespace Servises.TempProgramImportApi
         /// Returning an list of an cpu or cpus if running ob multi cpu server
         /// </summary>
         /// <returns></returns>
-        public List<string> returnCpuName()
+        public CpuModell returnCpuName()
         {
-            List<string> returnString = new List<string>();
+            List<CpuModell> ReturnCPUList = new List<CpuModell>();
+            CpuModell newCpu = new CpuModell();
 
             try
             {
@@ -34,7 +35,7 @@ namespace Servises.TempProgramImportApi
                 {
                     if (hardware.HardwareType == HardwareType.CPU)
                     {
-                        returnString.Add(hardware.Name);
+                        newCpu.Name = hardware.Name;
                     }
                 }
 
@@ -45,7 +46,7 @@ namespace Servises.TempProgramImportApi
                 throw;
             }
 
-            return returnString;
+            return newCpu;
         }
 
         /// <summary>

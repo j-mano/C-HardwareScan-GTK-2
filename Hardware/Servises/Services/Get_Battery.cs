@@ -10,6 +10,7 @@ namespace Servises.Services
     {
         /// <summary>
         /// This returning an model of an simple battery and returning it.
+        /// Can only be used on windows. Mac and Linux will throw exeption.
         /// </summary>
         /// <returns></returns>
         public static BatteryModell Get_Battaryed()

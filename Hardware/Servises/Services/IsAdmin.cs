@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Servises.Services
 {
+    /// <summary>
+    /// Is the program run as admin?
+    /// </summary>
     public class IsAdmin
     {
         public static bool RundAsAdmin()

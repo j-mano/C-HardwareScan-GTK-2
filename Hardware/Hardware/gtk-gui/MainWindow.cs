@@ -9,49 +9,53 @@ public partial class MainWindow
 
 	private global::Gtk.Fixed fixed1;
 
-	private global::Gtk.Label label1;
+	private global::Gtk.Label SystemRamTitleLbl;
 
-	private global::Gtk.Label label2;
+	private global::Gtk.Label IsAdminTitle;
 
-	private global::Gtk.Label label3;
+	private global::Gtk.Label CPUTEMPTitlelbl;
 
-	private global::Gtk.Label label4;
-
-	private global::Gtk.Label label5;
-
-	private global::Gtk.Label label6;
-
-	private global::Gtk.Label label12;
-
-	private global::Gtk.Label label13;
-
-	private global::Gtk.Label label8;
+	private global::Gtk.Label OSVERSIONTitle;
 
 	private global::Gtk.Label label10;
 
 	private global::Gtk.Label label11;
 
+	private global::Gtk.Label VramTitle;
+
+	private global::Gtk.Label VramPrintoutlbl;
+
+	private global::Gtk.Label AktivGpuTitle;
+
+	private global::Gtk.Label AktivGPUPrintOutLBL;
+
+	private global::Gtk.Label label8;
+
 	private global::Gtk.ScrolledWindow GtkScrolledWindow;
 
-	private global::Gtk.TextView textview2;
-
-	private global::Gtk.Label label7;
-
-	private global::Gtk.Label label9;
-
-	private global::Gtk.Label label14;
-
-	private global::Gtk.Label label15;
+	private global::Gtk.TextView TextviewGPUS;
 
 	private global::Gtk.Label label16;
 
-	private global::Gtk.Label label17;
+	private global::Gtk.Label CpuTitleLBL;
 
-	private global::Gtk.Label label18;
+	private global::Gtk.Label CpuTreadTitle;
 
-	private global::Gtk.Label label19;
+	private global::Gtk.Label CPUTEMPPrintout;
 
-	private global::Gtk.Label label20;
+	private global::Gtk.Label SysRamPrintOutlbl;
+
+	private global::Gtk.Label Cpu_LBL_PrintOut;
+
+	private global::Gtk.Label CpuTreadPrintOutLBL;
+
+	private global::Gtk.Label OSVERSIONPrintOutLBL;
+
+	private global::Gtk.Label IsAdminPrintOutlbl;
+
+	private global::Gtk.Label HasBatteryPrintOutLbl;
+
+	private global::Gtk.Label HasBatteryTitle;
 
 	private global::Gtk.Label GtkLabel;
 
@@ -75,181 +79,197 @@ public partial class MainWindow
 		this.fixed1.Name = "fixed1";
 		this.fixed1.HasWindow = false;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label1 = new global::Gtk.Label();
-		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("CPU");
-		this.fixed1.Add(this.label1);
-		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label1]));
+		this.SystemRamTitleLbl = new global::Gtk.Label();
+		this.SystemRamTitleLbl.Name = "SystemRamTitleLbl";
+		this.SystemRamTitleLbl.LabelProp = global::Mono.Unix.Catalog.GetString("SystemRam");
+		this.fixed1.Add(this.SystemRamTitleLbl);
+		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.SystemRamTitleLbl]));
 		w1.X = 17;
-		w1.Y = 22;
+		w1.Y = 140;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label2 = new global::Gtk.Label();
-		this.label2.Name = "label2";
-		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString("label2");
-		this.fixed1.Add(this.label2);
-		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label2]));
-		w2.X = 17;
-		w2.Y = 67;
+		this.IsAdminTitle = new global::Gtk.Label();
+		this.IsAdminTitle.Name = "IsAdminTitle";
+		this.IsAdminTitle.LabelProp = global::Mono.Unix.Catalog.GetString("Run as Admin?");
+		this.fixed1.Add(this.IsAdminTitle);
+		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.IsAdminTitle]));
+		w2.X = 23;
+		w2.Y = 282;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label3 = new global::Gtk.Label();
-		this.label3.Name = "label3";
-		this.label3.LabelProp = global::Mono.Unix.Catalog.GetString("SystemRam");
-		this.fixed1.Add(this.label3);
-		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label3]));
-		w3.X = 17;
-		w3.Y = 140;
+		this.CPUTEMPTitlelbl = new global::Gtk.Label();
+		this.CPUTEMPTitlelbl.Name = "CPUTEMPTitlelbl";
+		this.CPUTEMPTitlelbl.LabelProp = global::Mono.Unix.Catalog.GetString("Cpu - Temp");
+		this.fixed1.Add(this.CPUTEMPTitlelbl);
+		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.CPUTEMPTitlelbl]));
+		w3.X = 246;
+		w3.Y = 135;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label4 = new global::Gtk.Label();
-		this.label4.Name = "label4";
-		this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("label4");
-		this.fixed1.Add(this.label4);
-		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label4]));
-		w4.X = 18;
-		w4.Y = 184;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label5 = new global::Gtk.Label();
-		this.label5.Name = "label5";
-		this.label5.LabelProp = global::Mono.Unix.Catalog.GetString("Run as Admin?");
-		this.fixed1.Add(this.label5);
-		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label5]));
-		w5.X = 23;
-		w5.Y = 282;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label6 = new global::Gtk.Label();
-		this.label6.Name = "label6";
-		this.label6.LabelProp = global::Mono.Unix.Catalog.GetString("label6");
-		this.fixed1.Add(this.label6);
-		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label6]));
-		w6.X = 24;
-		w6.Y = 325;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label12 = new global::Gtk.Label();
-		this.label12.Name = "label12";
-		this.label12.LabelProp = global::Mono.Unix.Catalog.GetString("OS Version");
-		this.fixed1.Add(this.label12);
-		global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label12]));
-		w7.X = 247;
-		w7.Y = 279;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label13 = new global::Gtk.Label();
-		this.label13.Name = "label13";
-		this.label13.LabelProp = global::Mono.Unix.Catalog.GetString("label13");
-		this.fixed1.Add(this.label13);
-		global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label13]));
-		w8.X = 249;
-		w8.Y = 325;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label8 = new global::Gtk.Label();
-		this.label8.Name = "label8";
-		this.label8.LabelProp = global::Mono.Unix.Catalog.GetString("NVIDIA / AMD GPUS");
-		this.fixed1.Add(this.label8);
-		global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label8]));
-		w9.X = 956;
-		w9.Y = 27;
+		this.OSVERSIONTitle = new global::Gtk.Label();
+		this.OSVERSIONTitle.Name = "OSVERSIONTitle";
+		this.OSVERSIONTitle.LabelProp = global::Mono.Unix.Catalog.GetString("OS Version");
+		this.fixed1.Add(this.OSVERSIONTitle);
+		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.OSVERSIONTitle]));
+		w4.X = 245;
+		w4.Y = 282;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label10 = new global::Gtk.Label();
 		this.label10.Name = "label10";
 		this.label10.LabelProp = global::Mono.Unix.Catalog.GetString("DriverVersion");
 		this.fixed1.Add(this.label10);
-		global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label10]));
-		w10.X = 716;
-		w10.Y = 85;
+		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label10]));
+		w5.X = 464;
+		w5.Y = 75;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label11 = new global::Gtk.Label();
 		this.label11.Name = "label11";
 		this.label11.LabelProp = global::Mono.Unix.Catalog.GetString("label11");
 		this.fixed1.Add(this.label11);
-		global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label11]));
-		w11.X = 721;
-		w11.Y = 134;
+		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label11]));
+		w6.X = 466;
+		w6.Y = 104;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.VramTitle = new global::Gtk.Label();
+		this.VramTitle.Name = "VramTitle";
+		this.VramTitle.LabelProp = global::Mono.Unix.Catalog.GetString("Vram");
+		this.fixed1.Add(this.VramTitle);
+		global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.VramTitle]));
+		w7.X = 465;
+		w7.Y = 158;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.VramPrintoutlbl = new global::Gtk.Label();
+		this.VramPrintoutlbl.Name = "VramPrintoutlbl";
+		this.VramPrintoutlbl.LabelProp = global::Mono.Unix.Catalog.GetString("label9");
+		this.fixed1.Add(this.VramPrintoutlbl);
+		global::Gtk.Fixed.FixedChild w8 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.VramPrintoutlbl]));
+		w8.X = 468;
+		w8.Y = 182;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.AktivGpuTitle = new global::Gtk.Label();
+		this.AktivGpuTitle.Name = "AktivGpuTitle";
+		this.AktivGpuTitle.LabelProp = global::Mono.Unix.Catalog.GetString("Aktiv Gpu");
+		this.fixed1.Add(this.AktivGpuTitle);
+		global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.AktivGpuTitle]));
+		w9.X = 469;
+		w9.Y = 234;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.AktivGPUPrintOutLBL = new global::Gtk.Label();
+		this.AktivGPUPrintOutLBL.Name = "AktivGPUPrintOutLBL";
+		this.AktivGPUPrintOutLBL.LabelProp = global::Mono.Unix.Catalog.GetString("label20");
+		this.fixed1.Add(this.AktivGPUPrintOutLBL);
+		global::Gtk.Fixed.FixedChild w10 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.AktivGPUPrintOutLBL]));
+		w10.X = 467;
+		w10.Y = 257;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.label8 = new global::Gtk.Label();
+		this.label8.Name = "label8";
+		this.label8.LabelProp = global::Mono.Unix.Catalog.GetString("NVIDIA / AMD GPUS");
+		this.fixed1.Add(this.label8);
+		global::Gtk.Fixed.FixedChild w11 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label8]));
+		w11.X = 649;
+		w11.Y = 25;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
 		this.GtkScrolledWindow.Name = "GtkScrolledWindow";
 		this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 		// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
-		this.textview2 = new global::Gtk.TextView();
-		this.textview2.Buffer.Text = global::Mono.Unix.Catalog.GetString("Gpu-Names\nadded in textbox\nbecouse of sli/crossfire");
-		this.textview2.WidthRequest = 300;
-		this.textview2.HeightRequest = 150;
-		this.textview2.CanFocus = true;
-		this.textview2.Name = "textview2";
-		this.GtkScrolledWindow.Add(this.textview2);
+		this.TextviewGPUS = new global::Gtk.TextView();
+		this.TextviewGPUS.Buffer.Text = global::Mono.Unix.Catalog.GetString("Gpu-Names\nadded in textbox\nbecouse of sli/crossfire");
+		this.TextviewGPUS.WidthRequest = 300;
+		this.TextviewGPUS.HeightRequest = 150;
+		this.TextviewGPUS.CanFocus = true;
+		this.TextviewGPUS.Name = "TextviewGPUS";
+		this.GtkScrolledWindow.Add(this.TextviewGPUS);
 		this.fixed1.Add(this.GtkScrolledWindow);
 		global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.GtkScrolledWindow]));
-		w13.X = 952;
-		w13.Y = 78;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label7 = new global::Gtk.Label();
-		this.label7.Name = "label7";
-		this.label7.LabelProp = global::Mono.Unix.Catalog.GetString("Vram");
-		this.fixed1.Add(this.label7);
-		global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label7]));
-		w14.X = 728;
-		w14.Y = 185;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label9 = new global::Gtk.Label();
-		this.label9.Name = "label9";
-		this.label9.LabelProp = global::Mono.Unix.Catalog.GetString("label9");
-		this.fixed1.Add(this.label9);
-		global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label9]));
-		w15.X = 727;
-		w15.Y = 232;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label14 = new global::Gtk.Label();
-		this.label14.Name = "label14";
-		this.label14.LabelProp = global::Mono.Unix.Catalog.GetString("Amount od treads");
-		this.fixed1.Add(this.label14);
-		global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label14]));
-		w16.X = 252;
-		w16.Y = 28;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label15 = new global::Gtk.Label();
-		this.label15.Name = "label15";
-		this.label15.LabelProp = global::Mono.Unix.Catalog.GetString("label15");
-		this.fixed1.Add(this.label15);
-		global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label15]));
-		w17.X = 254;
-		w17.Y = 65;
+		w13.X = 644;
+		w13.Y = 52;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.label16 = new global::Gtk.Label();
 		this.label16.Name = "label16";
 		this.label16.LabelProp = global::Mono.Unix.Catalog.GetString("Intel gpus will not be shown.");
 		this.fixed1.Add(this.label16);
-		global::Gtk.Fixed.FixedChild w18 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label16]));
-		w18.X = 882;
-		w18.Y = 248;
+		global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label16]));
+		w14.X = 645;
+		w14.Y = 219;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label17 = new global::Gtk.Label();
-		this.label17.Name = "label17";
-		this.label17.LabelProp = global::Mono.Unix.Catalog.GetString("Cpu - Temp");
-		this.fixed1.Add(this.label17);
-		global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label17]));
-		w19.X = 246;
-		w19.Y = 135;
+		this.CpuTitleLBL = new global::Gtk.Label();
+		this.CpuTitleLBL.Name = "CpuTitleLBL";
+		this.CpuTitleLBL.LabelProp = global::Mono.Unix.Catalog.GetString("CPU");
+		this.fixed1.Add(this.CpuTitleLBL);
+		global::Gtk.Fixed.FixedChild w15 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.CpuTitleLBL]));
+		w15.X = 17;
+		w15.Y = 35;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label18 = new global::Gtk.Label();
-		this.label18.Name = "label18";
-		this.label18.LabelProp = global::Mono.Unix.Catalog.GetString("label18");
-		this.fixed1.Add(this.label18);
-		global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label18]));
-		w20.X = 254;
-		w20.Y = 185;
+		this.CpuTreadTitle = new global::Gtk.Label();
+		this.CpuTreadTitle.Name = "CpuTreadTitle";
+		this.CpuTreadTitle.LabelProp = global::Mono.Unix.Catalog.GetString("Amount od treads");
+		this.fixed1.Add(this.CpuTreadTitle);
+		global::Gtk.Fixed.FixedChild w16 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.CpuTreadTitle]));
+		w16.X = 246;
+		w16.Y = 34;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label19 = new global::Gtk.Label();
-		this.label19.Name = "label19";
-		this.label19.LabelProp = global::Mono.Unix.Catalog.GetString("Aktiv Gpu");
-		this.fixed1.Add(this.label19);
-		global::Gtk.Fixed.FixedChild w21 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label19]));
-		w21.X = 950;
-		w21.Y = 294;
+		this.CPUTEMPPrintout = new global::Gtk.Label();
+		this.CPUTEMPPrintout.Name = "CPUTEMPPrintout";
+		this.CPUTEMPPrintout.LabelProp = global::Mono.Unix.Catalog.GetString("label18");
+		this.fixed1.Add(this.CPUTEMPPrintout);
+		global::Gtk.Fixed.FixedChild w17 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.CPUTEMPPrintout]));
+		w17.X = 259;
+		w17.Y = 160;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.label20 = new global::Gtk.Label();
-		this.label20.Name = "label20";
-		this.label20.LabelProp = global::Mono.Unix.Catalog.GetString("label20");
-		this.fixed1.Add(this.label20);
-		global::Gtk.Fixed.FixedChild w22 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label20]));
-		w22.X = 947;
-		w22.Y = 352;
+		this.SysRamPrintOutlbl = new global::Gtk.Label();
+		this.SysRamPrintOutlbl.Name = "SysRamPrintOutlbl";
+		this.SysRamPrintOutlbl.LabelProp = global::Mono.Unix.Catalog.GetString("label4");
+		this.fixed1.Add(this.SysRamPrintOutlbl);
+		global::Gtk.Fixed.FixedChild w18 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.SysRamPrintOutlbl]));
+		w18.X = 27;
+		w18.Y = 163;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.Cpu_LBL_PrintOut = new global::Gtk.Label();
+		this.Cpu_LBL_PrintOut.Name = "Cpu_LBL_PrintOut";
+		this.Cpu_LBL_PrintOut.LabelProp = global::Mono.Unix.Catalog.GetString("label2");
+		this.fixed1.Add(this.Cpu_LBL_PrintOut);
+		global::Gtk.Fixed.FixedChild w19 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.Cpu_LBL_PrintOut]));
+		w19.X = 22;
+		w19.Y = 56;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.CpuTreadPrintOutLBL = new global::Gtk.Label();
+		this.CpuTreadPrintOutLBL.Name = "CpuTreadPrintOutLBL";
+		this.CpuTreadPrintOutLBL.LabelProp = global::Mono.Unix.Catalog.GetString("label15");
+		this.fixed1.Add(this.CpuTreadPrintOutLBL);
+		global::Gtk.Fixed.FixedChild w20 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.CpuTreadPrintOutLBL]));
+		w20.X = 260;
+		w20.Y = 53;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.OSVERSIONPrintOutLBL = new global::Gtk.Label();
+		this.OSVERSIONPrintOutLBL.Name = "OSVERSIONPrintOutLBL";
+		this.OSVERSIONPrintOutLBL.LabelProp = global::Mono.Unix.Catalog.GetString("label13");
+		this.fixed1.Add(this.OSVERSIONPrintOutLBL);
+		global::Gtk.Fixed.FixedChild w21 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.OSVERSIONPrintOutLBL]));
+		w21.X = 252;
+		w21.Y = 303;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.IsAdminPrintOutlbl = new global::Gtk.Label();
+		this.IsAdminPrintOutlbl.Name = "IsAdminPrintOutlbl";
+		this.IsAdminPrintOutlbl.LabelProp = global::Mono.Unix.Catalog.GetString("label6");
+		this.fixed1.Add(this.IsAdminPrintOutlbl);
+		global::Gtk.Fixed.FixedChild w22 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.IsAdminPrintOutlbl]));
+		w22.X = 29;
+		w22.Y = 302;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.HasBatteryPrintOutLbl = new global::Gtk.Label();
+		this.HasBatteryPrintOutLbl.Name = "HasBatteryPrintOutLbl";
+		this.HasBatteryPrintOutLbl.LabelProp = global::Mono.Unix.Catalog.GetString("label2");
+		this.fixed1.Add(this.HasBatteryPrintOutLbl);
+		global::Gtk.Fixed.FixedChild w23 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.HasBatteryPrintOutLbl]));
+		w23.X = 36;
+		w23.Y = 390;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.HasBatteryTitle = new global::Gtk.Label();
+		this.HasBatteryTitle.Name = "HasBatteryTitle";
+		this.HasBatteryTitle.LabelProp = global::Mono.Unix.Catalog.GetString("Has battery");
+		this.fixed1.Add(this.HasBatteryTitle);
+		global::Gtk.Fixed.FixedChild w24 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.HasBatteryTitle]));
+		w24.X = 23;
+		w24.Y = 363;
 		this.GtkAlignment.Add(this.fixed1);
 		this.frame1.Add(this.GtkAlignment);
 		this.GtkLabel = new global::Gtk.Label();
@@ -262,7 +282,7 @@ public partial class MainWindow
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 1363;
+		this.DefaultWidth = 1020;
 		this.DefaultHeight = 484;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);

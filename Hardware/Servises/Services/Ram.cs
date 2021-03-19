@@ -6,8 +6,15 @@ using System.Management;
 
 namespace Servises
 {
+    // windows only
+
     public class Ram_Speed
     {
+        /// <summary>
+        /// Gets the ram information.
+        /// Can only be used on windows. Mac and Linux will throw exeption.
+        /// </summary>
+        /// <returns>The ram.</returns>
         public static RamModell GetRam()
         {
             RamModell ram = new RamModell();
@@ -24,6 +31,7 @@ namespace Servises
                     ram.RamAmount = result["TotalVisibleMemorySize"].ToString();
                 }
 
+                return ram;
             }
             catch (Exception e)
             {
@@ -31,7 +39,7 @@ namespace Servises
                 throw;
             }
 
-            return ram;
+
         }
 
     }

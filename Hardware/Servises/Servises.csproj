@@ -6,13 +6,17 @@
 
   <ItemGroup>
     <PackageReference Include="Aspose.Email" Version="21.2.0" />
-    <PackageReference Include="Autofac" Version="6.1.0" />
     <PackageReference Include="Hardware.Info" Version="1.0.0.1" />
     <PackageReference Include="ManagedCuda-Nvml.NETStandard" Version="9.1.300" />
     <PackageReference Include="NvAPIWrapper.Net" Version="0.8.1.101" />
-    <PackageReference Include="OpenHardwareMonitorLibCore" Version="1.0.2" />
     <PackageReference Include="System.Threading.AccessControl" Version="5.0.0" />
     <PackageReference Include="OpenHardwareMonitor" Version="0.7.1" />
+    <PackageReference Include="System.Security.Principal.Windows" Version="5.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Services\Get_Cpu_Temp.cs" />
+    <Compile Remove="Services\Get_Gpu_Nvidia.cs" />
+    <Compile Remove="Services\Ram_Amount.cs" />
+  </ItemGroup>
 </Project>

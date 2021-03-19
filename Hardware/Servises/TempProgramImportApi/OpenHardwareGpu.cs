@@ -117,7 +117,7 @@ namespace Servises.TempProgramImportApi
         /// <returns></returns>
         public string returnFanSpeed()
         {
-            string returnString = 0;
+            string returnString = "0";
 
             foreach (var hardware in ComputerGpu.Hardware)
             {

@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Servises
 {
-    // Planed for future use
+    /// <summary>
+    /// not get implemented
+    /// </summary>
     class Get_Gpu_Api
     {
 

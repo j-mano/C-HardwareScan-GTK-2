@@ -8,6 +8,11 @@ namespace Servises
 {
     public class MotherBoard
     {
+        /// <summary>
+        /// Gets the moder board info.
+        /// Can only be used on windows. Mac and Linux will throw exeption.
+        /// </summary>
+        /// <returns>The moder board info.</returns>
         public static MotherBoardModell GetModerBoardInfo()
         {
             MotherBoardModell returninfo = new MotherBoardModell();
@@ -28,13 +33,13 @@ namespace Servises
                 {
                     returninfo.motherBoardName = queryObj["Product"].ToString();
                 }
+
+                return returninfo;
             }
-            catch (Exception e)
+            catch
             {
                 throw;
             }
-
-            return returninfo;
         }
     }
 }
